@@ -1,0 +1,32 @@
+package org.observer;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class StatisticsDisplay implements Observer, DisplayElement {
+    private final ArrayList<Float> list;
+    private float temperature;
+    private float avg;
+    private float max;
+    private float min;
+    private Subject weatherData;
+
+    public StatisticsDisplay(Subject weatherData) {
+        this.weatherData = weatherData;
+        list = new ArrayList<>();
+        weatherData.registerObserver(this);
+    }
+
+    public void update(float temperature, float humidity, float pressure) {
+        this.temperature = temperature;
+        list.add(temperature);
+        max = Collections.max(list);
+        min = Collections.min(list);
+        avg = (max + min) / 2;
+        display();
+    }
+
+    public void display() {
+        System.out.println("Avg/Max/Min temperature = " + avg + "/" + max + "/" + min);
+    }
+}
