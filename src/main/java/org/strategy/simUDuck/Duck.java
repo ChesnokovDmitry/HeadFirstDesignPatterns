@@ -1,4 +1,4 @@
-package org.strategy;
+package org.strategy.simUDuck;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;
