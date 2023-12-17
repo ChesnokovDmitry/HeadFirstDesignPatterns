@@ -5,15 +5,21 @@ public interface Subject {
     /**
      * @param o - регистрируемый наблюдатель
      */
-    public void registerObserver(Observer o);
+    void registerObserver(Observer o);
 
     /**
      * @param o - исключаемый наблюдатель
      */
-    public void removeObserver(Observer o);
+    void removeObserver(Observer o);
 
     /**
      * Для оповещения наблюдателей об изменении состояния субъекта
      */
-    public void notifyObservers();
+    void notifyObservers();
+
+    float getTemperature();
+
+    float getHumidity();
+
+    float getPressure();
 }

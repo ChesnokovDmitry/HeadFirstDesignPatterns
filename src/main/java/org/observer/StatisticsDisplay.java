@@ -9,7 +9,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     private float avg;
     private float max;
     private float min;
-    private Subject weatherData;
+    private final Subject weatherData;
 
     public StatisticsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
@@ -17,8 +17,8 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
-    public void update(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
+    public void update() {
+        this.temperature = weatherData.getTemperature();
         list.add(temperature);
         max = Collections.max(list);
         min = Collections.min(list);
