@@ -1,4 +1,7 @@
-package org.strategy.simUDuck;
+package org.strategy.simUDuck.duck;
+
+import org.strategy.simUDuck.fly.FlyBehavior;
+import org.strategy.simUDuck.quack.QuackBehavior;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;

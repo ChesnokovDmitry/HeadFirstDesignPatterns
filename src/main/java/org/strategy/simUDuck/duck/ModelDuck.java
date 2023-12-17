@@ -1,4 +1,7 @@
-package org.strategy.simUDuck;
+package org.strategy.simUDuck.duck;
+
+import org.strategy.simUDuck.fly.FlyNoWay;
+import org.strategy.simUDuck.quack.Quack;
 
 public class ModelDuck extends Duck {
     public ModelDuck() {

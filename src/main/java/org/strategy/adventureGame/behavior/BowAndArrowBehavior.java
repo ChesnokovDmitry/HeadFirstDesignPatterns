@@ -1,4 +1,4 @@
-package org.strategy.adventureGame;
+package org.strategy.adventureGame.behavior;
 
 public class BowAndArrowBehavior implements WeaponBehavior {
 

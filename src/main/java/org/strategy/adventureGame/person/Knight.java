@@ -1,4 +1,7 @@
-package org.strategy.adventureGame;
+package org.strategy.adventureGame.person;
+
+import org.strategy.adventureGame.behavior.SwordBehavior;
+import org.strategy.adventureGame.person.Character;
 
 public class Knight extends Character {
 

@@ -1,4 +1,4 @@
-package org.strategy.simUDuck;
+package org.strategy.simUDuck.quack;
 
 public class Squeak implements QuackBehavior {
     public void quack() {

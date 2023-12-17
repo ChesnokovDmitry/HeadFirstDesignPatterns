@@ -1,4 +1,4 @@
-package org.observer;
+package org.observer.interfaces;
 
 /**
  * Интерфейс реализуется всеми наблюдателями

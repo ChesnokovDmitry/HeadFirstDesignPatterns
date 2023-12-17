@@ -1,4 +1,4 @@
-package org.strategy.simUDuck;
+package org.strategy.simUDuck.fly;
 
 /**
  * Реализация поведения для уток, которые не летают (резиновые)

@@ -1,5 +1,9 @@
 package org.observer;
 
+import org.observer.interfaces.DisplayElement;
+import org.observer.interfaces.Observer;
+import org.observer.interfaces.Subject;
+
 /**
  * Выводит прогноз погоды по показаниям барометра
  */

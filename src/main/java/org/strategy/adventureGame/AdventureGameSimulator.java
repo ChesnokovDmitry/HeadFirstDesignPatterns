@@ -1,5 +1,12 @@
 package org.strategy.adventureGame;
 
+import org.strategy.adventureGame.behavior.BowAndArrowBehavior;
+import org.strategy.adventureGame.person.Character;
+import org.strategy.adventureGame.person.King;
+import org.strategy.adventureGame.person.Knight;
+import org.strategy.adventureGame.person.Queen;
+import org.strategy.adventureGame.person.Troll;
+
 public class AdventureGameSimulator {
 
     public static void main(String[] args) {

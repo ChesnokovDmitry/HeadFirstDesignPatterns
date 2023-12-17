@@ -1,4 +1,7 @@
-package org.strategy.adventureGame;
+package org.strategy.adventureGame.person;
+
+import org.strategy.adventureGame.behavior.AxeBehavior;
+import org.strategy.adventureGame.person.Character;
 
 public class Troll extends Character {
 

@@ -1,4 +1,6 @@
-package org.observer;
+package org.observer.interfaces;
+
+import org.observer.interfaces.Observer;
 
 public interface Subject {
 
