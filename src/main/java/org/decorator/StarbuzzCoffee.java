@@ -11,9 +11,11 @@ public class StarbuzzCoffee {
 
     public static void main(String[] args) {
         Beverage espresso = new Espresso(); //заказываем Espresso без дополнений
+        espresso.setSize(Beverage.Size.AVERAGE);
         System.out.println(espresso.getDescription() + " $" + espresso.cost());
 
         Beverage darkRoast = new DarkRoast();
+        darkRoast.setSize(Beverage.Size.BIG);
         darkRoast = new Mocha(darkRoast);   //заворачиваем в объект Mocha (шоколад)
         darkRoast = new Mocha(darkRoast);   //заворачиваем второй раз в Mocha
         darkRoast = new Whip(darkRoast);    //заворачиваем в объект Whip (взбитые сливки)

@@ -10,6 +10,20 @@ public class HouseBlend extends Beverage {
 
     @Override
     public double cost() {
-        return 0.89;
+        double cost = 0.0;
+
+        switch(size) {
+            case SMALL:
+                cost = 0.89;
+                break;
+            case AVERAGE:
+                cost = 1.01;
+                break;
+            case BIG:
+                cost = 1.32;
+                break;
+        }
+
+        return cost;
     }
 }

@@ -15,7 +15,20 @@ public class MilkFoam extends CondimentDecorator {
 
     @Override
     public double cost() {
-        return beverage.cost() + .20;
+        double cost = beverage.cost();
+
+        switch(size) {
+            case SMALL:
+                cost += .20;
+                break;
+            case AVERAGE:
+                cost += .25;
+                break;
+            case BIG:
+                cost += .30;
+        }
+
+        return cost;
     }
 
     @Override

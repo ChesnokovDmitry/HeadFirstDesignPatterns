@@ -10,6 +10,20 @@ public class Espresso extends Beverage {
 
     @Override
     public double cost() {
-        return 1.99;
+        double cost = 0.0;
+
+        switch(size) {
+            case SMALL:
+                cost = 1.99;
+                break;
+            case AVERAGE:
+                cost = 3.99;
+                break;
+            case BIG:
+                cost = 5.99;
+                break;
+        }
+
+        return cost;
     }
 }
